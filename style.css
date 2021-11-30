@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form{
+    max-width: 550px;
+}
+
+.formInput::placeholder{
+    letter-spacing: 2px;
+}
+
+.loginSubmit{
+    font-weight: 700;
+    padding: 10px 30px 10px 40px;
+    border-radius: 30px;
+    margin: 20px auto;
+    background-color: #8C2370;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.loginSubmit:hover{
+    box-shadow: 0 10px 30px #8C2370;
+    transform: scale(1.05);
+}
+
+.loginBanner{
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: url('/img/pexels-anni-roenkae-2860807\ \(1\).jpg') no-repeat;
+    background-size: cover;
+}
+
+.photoBanner{
+    width: 100%;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 20px 40px;
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+.formInput{
+    border: none;
+    padding: 12px 25px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 30px;
+    margin: 8px 0;
+}
+
+.iconsWrapper{
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+    color: rgb(168, 168, 168);
+}
+
+.bi{
+    transition: color 0.3s ease-out;
+}
+
+.bi:hover{
+    color: rgb(128, 128, 128);
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .loginBanner{display: none;}
+    .loginForm{
+        height: 100vh;
+    }
+}
